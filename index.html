@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Tailwind CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Tailwind Config Link-->
+    <script src="tailwind.config.js"></script>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Ad Section-->
+    <section id="ad_section" class="flex bg-gray-900 text-white p-3 justify-around text-2xl">
+        <div class="flex gap-3">
+            <h2>Sign up and</h2>
+            <p class="font-bold">Get 20% OFF</p>
+            <h2>for your first order</h2>
+        </div>
+        <div>
+            <img src="pictures/no.png" id="close_ad" class="w-6 h-6 cursor-pointer">
+        </div>
+    </section>
+
+    <!--Navbar Section-->
+    <section class="bg-white flex justify-between items-center align-bottom p-5 sticky z-10 top-0">
+        <div>
+            <h1 class="text-3xl font-bold">Nostra</h1>
+        </div>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1"
+            stroke="currentColor" class="w-6 h-6 md:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+        </svg>
+
+        <div class="items-end hidden md:flex">
+            <ul class="flex gap-7">
+                <li><a href="">Home</a></li>
+                <li><a href="">New Arrival</a></li>
+                <li><a href="">Most Wanted</a></li>
+                <li><a href="collection.html">Collections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Side Navbar Section-->
+    <section id="side_nav" class="flex justify-between bg-gray-900 z-20 fixed top-0 p-5 transition-all duration-1000"
+        style="width: 50%; height: 100vh; left: -50%;">
+        <div class="flex items-start justify-center">
+            <ul class="flex flex-col items-start gap-7 text-white">
+                <li><a href="">Home</a></li>
+                <li><a href="">New Arrival</a></li>
+                <li><a href="">Most Wanted</a></li>
+                <li><a href="collection.html">Collections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="close_nav">
+            <img src="pictures/no.png" id="close_ad" class="w-6 h-6 cursor-pointer">
+        </div>
+    </section>
+
+    <!--Img and FrontPage-->
+    <section>
+        <div id="container">
+            <div id="overley" class="h-96 top-0" style="width: 100%;"></div>
+            <div id="img_containers" class="flex-nowrap overflow-auto justify-center">
+                <div class=" flex justify-center">
+                    <img src="Dress Pictures/fashion_img1.jpg" class="h-96 top-0">
+                    <img src="Dress Pictures/fashion_img7.jpg" class="h-96 top-0">
+                </div>
+            </div>
+            <div class="absolute flex flex-col gap-4 items-center justify-center top-10 mt-20" style="width: 100%;">
+                <h1 class="font-bold text-3xl text-white">Level up Your style with our</h1>
+                <p class="text-white">Summer Collections</p>
+                <button class="inline-block p-3 w-32 bg-black text-white border border-none rounded-xl">Shop
+                    now <i class="fa-solid fa-arrow-right" style="color: white;"></i></button>
+            </div>
+            <div class="absolute flex justify-around items-center top-10 mt-24" style="width: 100%;">
+                <i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-arrow-right" style="color: white;"></i>
+            </div>
+        </div>
+    </section>
+
+    <!--Brand Section-->
+    <section class="flex flex-col gap-4 mt-10 ml-5 mr-5">
+        <h1 class="text-3xl font-bold">Brands</h1>
+        <div class="flex justify-between mr-4 mt-5">
+            <div class="flex flex-col items-center">
+                <img src="pictures/simple.png" class="w-10 h-10">
+                <p>Simple</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="pictures/adidas.png" class="w-10 h-10">
+                <p>Addidas</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="pictures/nike.png" class="w-10 h-10">
+                <p>Nike</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="pictures/puma.png" class="w-10 h-10">
+                <p>Puma</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="pictures/be-social-badge.png" class="w-10 h-10">
+                <p>Behance</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="pictures/twitch.png" class="w-10 h-10">
+                <p>Twitch</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Customer Experience Section-->
+    <section class="flex flex-col mt-10">
+        <div class="flex justify-between ml-5">
+            <div class="w-96">
+                <h1 class="font-bold text-3xl">We Provide Best Customer Experience</h1>
+            </div>
+            <div class="w-96">
+                <p>|| We ensure that our customer have the best shopping experience</p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap basis-5 justify-evenly gap-5 mt-8 ml-5 mr-5">
+            <div class="flex flex-col bg-gray-400 p-5 gap-2">
+                <img src="pictures/checked.png" class="w-10 h-10">
+                <p class="font-bold">Original Products</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, aut.</p>
+            </div>
+            <div class="flex flex-col bg-gray-400 p-5 gap-2">
+                <img src="pictures/guarantee.png" class="w-10 h-10">
+                <p class="font-bold">Satisfaction Guarantee</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, aut.</p>
+            </div>
+            <div class="flex flex-col bg-gray-400 p-5 gap-2">
+                <img src="pictures/shopping-bag.png" class="w-10 h-10">
+                <p class="font-bold">New Arrival Everyday</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, aut.</p>
+            </div>
+            <div class="flex flex-col bg-gray-400 p-5 gap-2">
+                <img src="pictures/free-shipping.png" class="w-10 h-10">
+                <p class="font-bold">Fast & Free Shipping</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, aut.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--New Arrivals-->
+    <section class="mt-10 ml-5 flex flex-col gap-5">
+        <div>
+            <h1 class="font-bold text-3xl">New Arrivals</h1>
+        </div>
+
+        <div class="newdress_container">
+            <div class="newdress">
+                <div class="dress_overley"></div>
+                <img src="Dress Pictures/dress1.jpg">
+                <button class="inline-block p-3 w-32 bg-white text-black border border-none rounded-xl">Shop
+                    now <i class="fa-solid fa-arrow-right" style="color: black;"></i></button>
+            </div>
+            <div class="newdress">
+                <div class="dress_overley"></div>
+                <img src="Dress Pictures/dress2.jpg">
+                <button class="inline-block p-3 w-32 bg-white text-black border border-none rounded-xl">Shop
+                    now <i class="fa-solid fa-arrow-right" style="color: black;"></i></button>
+            </div>
+            <div class="newdress">
+                <div class="dress_overley"></div>
+                <img src="Dress Pictures/dress3.jpg">
+                <button class="inline-block p-3 w-32 bg-white text-black border border-none rounded-xl">Shop
+                    now <i class="fa-solid fa-arrow-right" style="color: black;"></i></button>
+            </div>
+            <div class="newdress">
+                <div class="dress_overley"></div>
+                <img src="Dress Pictures/dress4.jpg">
+                <button class="inline-block p-3 w-32 bg-white text-black border border-none rounded-xl">Shop
+                    now <i class="fa-solid fa-arrow-right" style="color: black;"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!--Most Wanted-->
+    <section class="flex flex-col gap-5 mt-10" id="mostwanted_section">
+        <div class="ml-5">
+            <h1 class="font-bold text-3xl">Most Wanted</h1>
+        </div>
+
+        <div class="mostwanted_container">
+            <div class="mostwanted">
+                <img src="Dress Pictures/dress4.jpg">
+                <button class="inline-block w-32 bg-red-600 text-white text-2xl border border-none">Sale
+            </div>
+            <div class="mostwanted">
+                <img src="Dress Pictures/dress2.jpg">
+                <button class="inline-block w-32 bg-red-600 text-white text-2xl border border-none">Sale
+            </div>
+            <div class="mostwanted">
+                <img src="Dress Pictures/dress3.jpg">
+                <button class="inline-block w-32 bg-red-600 text-white text-2xl border border-none">Sale
+            </div>
+            <div class="mostwanted">
+                <img src="Dress Pictures/dress5.jpg">
+                <button class="inline-block w-32 bg-red-600 text-white text-2xl border border-none">Sale
+            </div>
+            <div class="mostwanted">
+                <img src="Dress Pictures/dress6.jpg">
+                <button class="inline-block w-32 bg-red-600 text-white text-2xl border border-none">Sale
+            </div>
+            <div class="mostwanted">
+                <img src="Dress Pictures/dress7.jpg">
+                <button class="inline-block w-32 bg-red-600 text-white text-2xl border border-none">Sale
+            </div>
+            <div class="mostwanted">
+                <img src="Dress Pictures/dress8.jpg">
+                <button class="inline-block w-32 bg-red-600 text-white text-2xl border border-none">Sale
+            </div>
+            <div class="mostwanted">
+                <img src="Dress Pictures/dress1.jpg">
+                <button class="inline-block w-32 bg-red-600 text-white text-2xl border border-none">Sale
+            </div>
+        </div>
+    </section>
+
+    <!--Limited Offer Section-->
+    <section class="flex justify-evenly bg-gray-900 m-5 p-5">
+        <div>
+            <img src="Dress Pictures/offer.jpg" class="hidden md:flex">
+        </div>
+        <div class="flex flex-col gap-3 justify-center">
+            <h1 class="font-bold text-5xl text-white">Limited Offer</h1>
+            <p class="font-bold text-white text-2xl">35% OFF on this for the first 30 Customers</p>
+            <button class="inline-block p-3 w-32 bg-white text-black border border-none rounded-xl">Shop
+                now <i class="fa-solid fa-arrow-right" style="color: black;"></i></button>
+        </div>
+    </section>
+
+    <!--News Letter-->
+    <section class="text-center m-4 mt-10">
+        <div>
+            <h1 class="font-bold text-3xl text-center">Join Our News Letter</h1>
+            <p class="text-center mt-1">Sign up our email newspaper to get exclusive discounts updates and more</p>
+            <input type="text" class="border border-black rounded ml-10 mt-3 p-2 md:ml-35" style="width: 80%;">
+            <br>
+            <button class="bg-black text-white p-2 m-4 rounded-md">Subcribe</button>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="bg-gray-900 flex flex-col gap-5 p-10 mt-5">
+        <h1 class="font-bold text-3xl text-white">Nostra</h1>
+        <p class="text-white">The standard chunk of lorem ipsum used since the 1500s is reproduced below for those
+            interest</p>
+        <p class="text-white">&copy;2025 Nostra.com</p>
+    </section>
+
+    <!--Scripts-->
+    <script src="index.js"></script>
+</body>
+
+</html>

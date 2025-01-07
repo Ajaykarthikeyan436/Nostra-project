@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    position: relative;
+}
+
+#overley{
+    background-color: black;
+    width: 600px;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+}
+
+#img_containers{
+    scrollbar-width: none;
+}
+
+.newdress img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.newdress_container{
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    gap: 10px;
+    justify-content: center;
+}
+
+.newdress{
+    position: relative;
+    display: flex;
+}
+
+.dress_overley{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    opacity: 0.8;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.newdress button{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+}
+
+#inputbox:focus{
+    outline: none;
+}
+
+.mostwanted_container{
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    gap: 30px;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+
+.mostwanted img{
+    width: 300px;
+}
+
+.mostwanted{
+    min-width: 300px;
+    display: flex;
+    position: relative;
+    scroll-snap-align: start;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+}
+
+.mostwanted button{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.collection_container img{
+    width: 300px;
+}
+
+#search_section{
+    border-left: black 2px solid;
+}
+
+.Dresscollection{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    justify-content: center;
+}
